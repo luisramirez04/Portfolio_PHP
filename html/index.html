@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Luis Ramirez's Portfolio</title>
+        <link href="../css/portfoliostyle.css" rel="stylesheet">
+        <link href="../css/portfoliostyleprint.css" rel="stylesheet" media="print">
+    </head>
+    <body>
+        <header>
+            <h1>Luis Ramirez</h1>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="interests.html">Interests</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="http://www.luisr.sgedu.site/portfolio/php/testemonials.php">Testemonials</a>
+            </nav>
+        </header>
+        <main>
+            <figure id="profilepicture">
+                <img src="../images/profilepicture.jpeg" alt="This is a picture of the developer of this website.">
+            </figure>
+            <article>
+                <h2>About</h2>
+                <p class="largeParagraph">
+                    Hello, My name is Luis Ramirez and I am a software engineer with 
+                    experience developing mobile and web applications. This website will showcase the 
+                    applications that I have developed and will provide links to the source code to my projects. 
+                    To contact me, please enter your email in the below form and I will respond promply.  
+                </p>
+                <form action="http://www.luisr.sgedu.site/portfolio/php/sendEmail.php" method="POST">
+                    <input type="email" name="email" required/>
+                    <input type="submit" name="submit" value="Say Hi!"/>
+                </form>
+            </article>
+            <article>
+                <p>Below are some of the technologies that I have experience with:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Java</li>
+                    <li>Swift</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>ReactNative</li>
+                    <li>Knockout.js</li>
+                </ul>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <p>Copyright &copy; Luis Ramirez</p>
+        </footer>
+    </body>
+</html>

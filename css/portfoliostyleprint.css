@@ -1,0 +1,49 @@
+/* Changed font-family, size, colors optimized for print */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: white; 
+    color: black;
+    max-width: 960px;
+    margin: 0;
+    padding: 0;
+}
+
+/* There is no need for the user to print any of these items. 
+    The iframe will have no value to be printed, so it is being 
+    switched for an image.  */
+header, form, iframe {
+    display: none; 
+}
+
+p {
+    text-align: left;
+}
+
+li {
+    color: black; 
+}
+
+/* Showing the image that was not displayed in screen style. */
+.showForPrintOnly {
+    display: block;
+}
+
+/* Changed footer to a fixed position so it would not appear in the middle of the page. */
+footer {
+    position: fixed;
+    left: 0; 
+    bottom: 0; 
+    width: 100%;
+    text-align: left; 
+}
+
+/* Displaying the actual link of the anchor tags so users can still have access to the link */
+a:after {
+    content: " [" attr(href) "]";
+}
+
+table {
+    width: 100%;
+    color: black;
+}

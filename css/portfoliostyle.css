@@ -1,0 +1,218 @@
+/* Color pallete inspiration gathered from https://blog.visme.co/website-color-schemes/ */
+/* Begin styling for overall website */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #1F2833; 
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    padding: 10px; 
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #66FCF1;
+    font-size: 250%;
+}
+
+/* Margin Auto is to push the buttons to the bottom of the Nav. */
+header nav {
+     margin-top: auto;
+}
+
+nav > a:visited, nav > a:link, .blueBorderButton {
+    background-color: #1F2833;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav > a:hover, nav > a:active {
+    background-color: white; 
+    color: black; 
+}
+
+footer {
+    margin-bottom: 15px;
+}
+
+.largeParagraph {
+    text-rendering: optimizeLegibility;
+    font-size: 120%;
+    text-align: left;
+    line-height: 1.2em;
+}
+
+/* End overall website styling
+    Begin styling for index.html */
+#profilepicture > img {
+    border-radius: 50%;
+}
+
+form > input[type=text] {
+    border-radius: 5px;
+}
+
+form > input[type=submit] {
+    border-radius: 10px;
+    background-color: #1f2833;
+    color: white;
+    border-color: #66FCF1;
+}
+
+/* Inspiration for accomplishing this list style gathered from 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout */
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding-left: 0px;
+}
+
+li {
+    padding: 14px 25px; 
+}
+
+hr {
+    height: 1px;
+    background-color: #66FCF1;
+    border: none;
+}
+
+/* End styling for index.html
+    Begin styling for projects.html */
+
+/* Anchor tags need to behave differently outside of the Nav. */
+a:visited, a:link {
+    color: white;
+}
+
+a:hover, a:active {
+    color: #66FCF1;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    color:white;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table > caption {
+    margin: 10px;
+}
+    
+thead {
+    background-color: #1f2833;
+    text-transform: uppercase;
+}
+
+thead th {
+    padding: 15px;
+}
+
+tbody {
+    background-color: #0b0c10;
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid white;
+    width: auto;
+}
+
+/* Gave this column more space to improve readability. */
+#descriptionColumn {
+    width: 40%;
+}
+
+#technologiesColumn {
+    width: 20%;
+}
+
+/*Added class with additional styling to improve readability of the long descriptions. */
+.projectDescription {
+    text-align: left;
+    line-height: 20px;
+}
+
+/* Made this a class in case I wanted to reuse for future elements that will not show for print */
+.showForPrintOnly {
+    display: none; 
+}
+
+form {
+    width: 75%; 
+    margin: 50px auto; 
+}
+
+form > * {
+    padding: 10px; 
+}
+
+#formElements > * {
+    padding: 15px; 
+}
+
+#formElements {
+    display: flex;
+    flex-direction: column;
+}
+
+.hrWhite {
+    height: 1px; 
+    color: white; 
+    background-color: white;    
+    border: none;
+}
+
+.active {
+    border: 0px solid !important;
+    border-bottom: 3px solid #66FCF1 !important;
+   
+}
+
+.errorMessage {
+    display: none;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    background-color: red;
+    font-size: 12px;
+}
+
+/* Media queries to make the navigation and text look better on smaller devices. 720px is where the navigation bar
+starts to take up two separate lines and is no longer appealing. */
+@media screen and (max-width: 760px) {
+    header {
+        flex-direction: column;
+    } 
+}
+
+@media screen and (min-width: 960px) {
+    font-size: 100%;
+}
+
+.blueBorderButton {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    font-size: 20px;
+}
